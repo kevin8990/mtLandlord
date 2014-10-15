@@ -1,0 +1,28 @@
+#ifndef			__MT_MYSQLUTIL_H_
+#define			__MT_MYSQLUTIL_H_
+
+#include <Windows.h>
+#include <mysql.h> 
+#include <iostream>
+
+#include "mtPlatform.h"
+
+class MySqlUtil
+{
+public:
+	MySqlUtil(void);
+	~MySqlUtil(void);
+
+	MYSQL*	Connect();
+	int		Insert(char* insertSql);
+	int		erron();
+	const char*	error();
+
+private:
+	const char* errorMsg;
+	int			iErron;
+
+	void	setDefault();
+};
+
+#endif

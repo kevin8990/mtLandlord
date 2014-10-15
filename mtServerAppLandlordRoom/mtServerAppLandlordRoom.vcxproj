@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44A296E3-15FD-47EA-8C3E-06418303207C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mtServerAppLandlordRoom</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mtService;.\mtQueue;.\mtThread;.\mtPlatform;.\;.\mtServiceMonitor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mtService;.\mtQueue;.\mtThread;.\mtPlatform;.\mtServiceMonitor</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="mtPlatform\mtException.cpp" />
+    <ClCompile Include="mtPlatform\mtGlobal.cpp" />
+    <ClCompile Include="mtQueue\mtDSList.cpp" />
+    <ClCompile Include="mtQueue\mtListManagerAi.cpp" />
+    <ClCompile Include="mtQueue\mtQueueDesk.cpp" />
+    <ClCompile Include="mtQueue\mtQueueHall.cpp" />
+    <ClCompile Include="mtQueue\mtQueueMgr.cpp" />
+    <ClCompile Include="mtQueue\mtQueuePacket.cpp" />
+    <ClCompile Include="mtQueue\mtQueueSendPackAi.cpp" />
+    <ClCompile Include="mtQueue\mtQueueUser.cpp" />
+    <ClCompile Include="mtServer.cpp" />
+    <ClCompile Include="mtService\mtServiceMonitor.cpp" />
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorMgr.cpp" />
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorUpdateRoom.cpp" />
+    <ClCompile Include="mtService\mtPrint.cpp" />
+    <ClCompile Include="mtService\mtService.cpp" />
+    <ClCompile Include="mtService\mtServiceCardAI.cpp" />
+    <ClCompile Include="mtService\mtServiceCardDeal.cpp" />
+    <ClCompile Include="mtService\mtServiceCardOut.cpp" />
+    <ClCompile Include="mtService\mtServiceConnect.cpp" />
+    <ClCompile Include="mtService\mtServiceMgr.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomChangeDesk.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomChatContext.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomChatIcon.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomChatShortCut.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomDeskThree.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomDeskTwo.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomDoubleScore.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomExit.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomGrabLandlord.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomHeartBeat.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomIncrementGold.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomRequestCardsLeft.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomRoundOver.cpp" />
+    <ClCompile Include="mtService\mtServiceRoomWaitStartRecv.cpp" />
+    <ClCompile Include="mtService\mtServiceShowCard.cpp" />
+    <ClCompile Include="mtThread\mtThreadDetect.cpp" />
+    <ClCompile Include="mtThread\mtThread.cpp" />
+    <ClCompile Include="mtThread\mtThreadConnect.cpp" />
+    <ClCompile Include="mtThread\mtThreadManagerAI.cpp" />
+    <ClCompile Include="mtThread\mtThreadMgr.cpp" />
+    <ClCompile Include="mtThread\mtThreadMonitor.cpp" />
+    <ClCompile Include="mtThread\mtThreadRoom.cpp" />
+    <ClCompile Include="mtThread\mtThreadServiceMonitor.cpp" />
+    <ClCompile Include="mtThread\mtThreadWork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtPlatform\mtDefine.h" />
+    <ClInclude Include="mtPlatform\mtDefineDebug.h" />
+    <ClInclude Include="mtPlatform\mtEnum.h" />
+    <ClInclude Include="mtPlatform\mtException.h" />
+    <ClInclude Include="mtPlatform\mtFunction.h" />
+    <ClInclude Include="mtPlatform\mtGlobal.h" />
+    <ClInclude Include="mtPlatform\mtPlatform.h" />
+    <ClInclude Include="mtPlatform\mtPragma.h" />
+    <ClInclude Include="mtPlatform\mtRTTI.h" />
+    <ClInclude Include="mtPlatform\mtTypedef.h" />
+    <ClInclude Include="mtQueue\mtDSList.h" />
+    <ClInclude Include="mtQueue\mtDSQueue.h" />
+    <ClInclude Include="mtQueue\mtDSQueueMemory.h" />
+    <ClInclude Include="mtQueue\mtList.h" />
+    <ClInclude Include="mtQueue\mtListManagerAi.h" />
+    <ClInclude Include="mtQueue\mtQueueDesk.h" />
+    <ClInclude Include="mtQueue\mtQueueHall.h" />
+    <ClInclude Include="mtQueue\mtQueueList.h" />
+    <ClInclude Include="mtQueue\mtQueueMgr.h" />
+    <ClInclude Include="mtQueue\mtQueuePacket.h" />
+    <ClInclude Include="mtQueue\mtQueueSendPackAi.h" />
+    <ClInclude Include="mtQueue\mtQueueUser.h" />
+    <ClInclude Include="mtServer.h" />
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitor.h" />
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorMgr.h" />
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorUpdateRoom.h" />
+    <ClInclude Include="mtService\mtPrint.h" />
+    <ClInclude Include="mtService\mtService.h" />
+    <ClInclude Include="mtService\mtServiceCardAI.h" />
+    <ClInclude Include="mtService\mtServiceCardDeal.h" />
+    <ClInclude Include="mtService\mtServiceCardOut.h" />
+    <ClInclude Include="mtService\mtServiceConnect.h" />
+    <ClInclude Include="mtService\mtServiceMgr.h" />
+    <ClInclude Include="mtService\mtServiceRoomChangeDesk.h" />
+    <ClInclude Include="mtService\mtServiceRoomChatContext.h" />
+    <ClInclude Include="mtService\mtServiceRoomChatIcon.h" />
+    <ClInclude Include="mtService\mtServiceRoomChatShortCut.h" />
+    <ClInclude Include="mtService\mtServiceRoomDeskThree.h" />
+    <ClInclude Include="mtService\mtServiceRoomDeskTwo.h" />
+    <ClInclude Include="mtService\mtServiceRoomDoubleScore.h" />
+    <ClInclude Include="mtService\mtServiceRoomExit.h" />
+    <ClInclude Include="mtService\mtServiceRoomGrabLandlord.h" />
+    <ClInclude Include="mtService\mtServiceRoomHeartBeat.h" />
+    <ClInclude Include="mtService\mtServiceRoomIncrementGold.h" />
+    <ClInclude Include="mtService\mtServiceRoomRequestCardsLeft.h" />
+    <ClInclude Include="mtService\mtServiceRoomRoundOver.h" />
+    <ClInclude Include="mtService\mtServiceRoomWaitStartRecv.h" />
+    <ClInclude Include="mtService\mtServiceShowCard.h" />
+    <ClInclude Include="mtThread\mtThread.h" />
+    <ClInclude Include="mtThread\mtThreadConnect.h" />
+    <ClInclude Include="mtThread\mtThreadDetect.h" />
+    <ClInclude Include="mtThread\mtThreadManagerAI.h" />
+    <ClInclude Include="mtThread\mtThreadMgr.h" />
+    <ClInclude Include="mtThread\mtThreadMonitor.h" />
+    <ClInclude Include="mtThread\mtThreadRoom.h" />
+    <ClInclude Include="mtThread\mtThreadServiceMonitor.h" />
+    <ClInclude Include="mtThread\mtThreadWork.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

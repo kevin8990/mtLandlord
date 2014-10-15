@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AF8F3FA-31A9-419B-808C-829D0D6ACE8C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mtServerAppFightLandlordLogin</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mtProtocolMonitor;.\mtProtocol;.\mtDB;.\mtFile;.\mtPlatform;.\mtThread;..\3lib\include\mysql;..\3lib\include\soci\backends\mysql;..\3lib\include\soci\core</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3lib\lib;..\3lib\lib\$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;soci_mysql_3_2.lib;soci_core_3_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\mtProtocolMonitor;.\mtProtocol;.\mtFile;.\mtPlatform;.\mtThread;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtDB\mtSQLEnv.h" />
+    <ClInclude Include="mtFile\mtFile.h" />
+    <ClInclude Include="mtFile\mtFileAccount.h" />
+    <ClInclude Include="mtFile\mtFileId.h" />
+    <ClInclude Include="mtFile\mtFileMgr.h" />
+    <ClInclude Include="mtFile\mtFilePhone.h" />
+    <ClInclude Include="mtFile\mtFileQQ.h" />
+    <ClInclude Include="mtPlatform\mtDefine.h" />
+    <ClInclude Include="mtPlatform\mtException.h" />
+    <ClInclude Include="mtPlatform\mtGlobal.h" />
+    <ClInclude Include="mtPlatform\mtPlatform.h" />
+    <ClInclude Include="mtProtocolMonitor\mtProtocolMonitor.h" />
+    <ClInclude Include="mtProtocolMonitor\mtProtocolMonitorMgr.h" />
+    <ClInclude Include="mtProtocol\mtPrint.h" />
+    <ClInclude Include="mtProtocol\mtProtocol.h" />
+    <ClInclude Include="mtProtocol\mtProtocolAlterPassword.h" />
+    <ClInclude Include="mtProtocol\mtProtocolConnect.h" />
+    <ClInclude Include="mtProtocol\mtProtocolLogin.h" />
+    <ClInclude Include="mtProtocol\mtProtocolMgr.h" />
+    <ClInclude Include="mtProtocol\mtProtocolRegister.h" />
+    <ClInclude Include="mtServer.h" />
+    <ClInclude Include="mtThread\mtThread.h" />
+    <ClInclude Include="mtThread\mtThreadMgr.h" />
+    <ClInclude Include="mtThread\mtThreadMonitor.h" />
+    <ClInclude Include="mtThread\mtThreadWork.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mtDB\mtSQLEnv.cpp" />
+    <ClCompile Include="mtFile\mtFile.cpp" />
+    <ClCompile Include="mtFile\mtFileAccount.cpp" />
+    <ClCompile Include="mtFile\mtFileId.cpp" />
+    <ClCompile Include="mtFile\mtFileMgr.cpp" />
+    <ClCompile Include="mtFile\mtFilePhone.cpp" />
+    <ClCompile Include="mtFile\mtFileQQ.cpp" />
+    <ClCompile Include="mtPlatform\mtException.cpp" />
+    <ClCompile Include="mtPlatform\mtGlobal.cpp" />
+    <ClCompile Include="mtProtocolMonitor\mtProtocolMonitor.cpp" />
+    <ClCompile Include="mtProtocolMonitor\mtProtocolMonitorMgr.cpp" />
+    <ClCompile Include="mtProtocol\mtPrint.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocol.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocolAlterPassword.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocolConnect.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocolLogin.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocolMgr.cpp" />
+    <ClCompile Include="mtProtocol\mtProtocolRegister.cpp" />
+    <ClCompile Include="mtServer.cpp" />
+    <ClCompile Include="mtThread\mtThread.cpp" />
+    <ClCompile Include="mtThread\mtThreadMgr.cpp" />
+    <ClCompile Include="mtThread\mtThreadMonitor.cpp" />
+    <ClCompile Include="mtThread\mtThreadWork.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

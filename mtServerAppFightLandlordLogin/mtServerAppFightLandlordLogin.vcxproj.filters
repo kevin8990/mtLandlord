@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mtPlatform">
+      <UniqueIdentifier>{28556e91-ce82-41c7-9e32-cc1380d4ead2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtFile">
+      <UniqueIdentifier>{4eb3deeb-830d-4227-857f-f56537edd565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtProtocol">
+      <UniqueIdentifier>{438040a6-2807-4e29-b129-ac34d35587cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtProtocolMonitor">
+      <UniqueIdentifier>{3b08d33e-a928-4c29-b431-a0bcad6cbafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtThread">
+      <UniqueIdentifier>{828b3b6a-c299-4b9e-93da-2b9e0840059d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtPlatform\mtDefine.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtException.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtPlatform.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocol.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocolAlterPassword.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocolConnect.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocolLogin.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocolMgr.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtProtocolRegister.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocolMonitor\mtProtocolMonitor.h">
+      <Filter>mtProtocolMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocolMonitor\mtProtocolMonitorMgr.h">
+      <Filter>mtProtocolMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThread.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadMgr.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadMonitor.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadWork.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServer.h" />
+    <ClInclude Include="mtPlatform\mtGlobal.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtProtocol\mtPrint.h">
+      <Filter>mtProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="mtDB\mtSQLEnv.h" />
+    <ClInclude Include="mtPlatform\mtQueueUser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mtPlatform\mtException.cpp">
+      <Filter>mtPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocol.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocolAlterPassword.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocolConnect.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocolLogin.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocolMgr.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtProtocolRegister.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocolMonitor\mtProtocolMonitor.cpp">
+      <Filter>mtProtocolMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocolMonitor\mtProtocolMonitorMgr.cpp">
+      <Filter>mtProtocolMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThread.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadMgr.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadMonitor.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadWork.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServer.cpp" />
+    <ClCompile Include="mtPlatform\mtGlobal.cpp">
+      <Filter>mtPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="mtProtocol\mtPrint.cpp">
+      <Filter>mtProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="mtDB\mtSQLEnv.cpp" />
+  </ItemGroup>
+</Project>

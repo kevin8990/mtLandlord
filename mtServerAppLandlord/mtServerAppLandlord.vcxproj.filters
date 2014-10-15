@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mtPlatform">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="mtThread">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="mtService">
+      <UniqueIdentifier>{b47af3fe-798a-4ddf-a3ba-5a644b6ec973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtQueue">
+      <UniqueIdentifier>{328ceadd-b348-46c8-bd8f-9ec8fc63a036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtServiceMonitor">
+      <UniqueIdentifier>{287a9d7c-462d-44d5-9645-6e374d8d2c21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mtServer.cpp" />
+    <ClCompile Include="mtPlatform\mtException.cpp">
+      <Filter>mtPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="mtPlatform\mtGlobal.cpp">
+      <Filter>mtPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThread.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadConnect.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadMgr.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadMonitor.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadWork.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtService.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMgr.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceConnect.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtQueue\mtDSList.cpp">
+      <Filter>mtQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mtQueue\mtQueueMgr.cpp">
+      <Filter>mtQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mtQueue\mtQueuePacket.cpp">
+      <Filter>mtQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallExit.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallRegister.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtQueue\mtQueueHall.cpp">
+      <Filter>mtQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallUpdateRoom.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtThread\mtThreadMonitorConnect.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitor.cpp">
+      <Filter>mtServiceMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorMgr.cpp">
+      <Filter>mtServiceMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorUpdateRoom.cpp">
+      <Filter>mtServiceMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallRank.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallGiveGold.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallUpdatePlayInfo.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallUpdateSocialInfo.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallHall2Room.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallRoom2Hall.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallPropBuy.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallGoldBuy.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorUpdateSysNotice.cpp">
+      <Filter>mtServiceMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallFeedBack.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtServiceMonitor\mtServiceMonitorUpdateGoldBuy.cpp">
+      <Filter>mtServiceMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceHallGoldBuyStatus.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtPrint.cpp">
+      <Filter>mtService</Filter>
+    </ClCompile>
+    <ClCompile Include="mtDB\mtSQLEnv.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceLottery.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceGetLotteryArg.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceSystemMessage.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceFeedPet.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceGetTaskAward.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceSpitGold.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceGetPetInfo.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceGetTaskInfo.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceCashLottery.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchGetRank.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchGetRoomStatus.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchGetUserInfo.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchAward.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchSignUp.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+    <ClCompile Include="mtService\mtServiceMatchGetRoomInfo.cpp">
+      <Filter>mtThread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtServer.h" />
+    <ClInclude Include="mtPlatform\mtDataStructQueue.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtDefine.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtDefineDebug.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtEnum.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtException.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtFunction.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtGlobal.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtPlatform.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtPragma.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtQueueWork.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtRTTI.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtPlatform\mtTypedef.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThread.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadConnect.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadMgr.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadMonitor.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadWork.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtService.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMgr.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceConnect.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtDSList.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtDSQueue.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtDSQueueMemory.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtList.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtQueueList.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtQueueMgr.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtQueuePacket.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallExit.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallRegister.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtQueue\mtQueueHall.h">
+      <Filter>mtQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallUpdateRoom.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtThread\mtThreadMonitorConnect.h">
+      <Filter>mtThread</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitor.h">
+      <Filter>mtServiceMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorMgr.h">
+      <Filter>mtServiceMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorUpdateRoom.h">
+      <Filter>mtServiceMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallRank.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallGiveGold.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallUpdatePlayInfo.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallUpdateSocialInfo.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallHall2Room.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallRoom2Hall.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallPropBuy.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallGoldBuy.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorUpdateSysNotice.h">
+      <Filter>mtServiceMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallFeedBack.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtServiceMonitor\mtServiceMonitorUpdateGoldBuy.h">
+      <Filter>mtServiceMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceHallGoldBuyStatus.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtPrint.h">
+      <Filter>mtService</Filter>
+    </ClInclude>
+    <ClInclude Include="mtDB\mtSQLEnv.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceLottery.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceGetLotteryArg.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceSystemMessage.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceFeedPet.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceGetTaskAward.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceSpitGold.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceGetPetInfo.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceGetTaskInfo.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceCashLottery.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchGetRank.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchGetRoomStatus.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchGetUserInfo.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchAward.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchSignUp.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="mtService\mtServiceMatchGetRoomInfo.h">
+      <Filter>mtPlatform</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

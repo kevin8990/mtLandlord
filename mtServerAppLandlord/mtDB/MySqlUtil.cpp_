@@ -1,0 +1,61 @@
+#include "MySqlUtil.h"
+
+MySqlUtil::MySqlUtil(void)	:
+	iErron(0),
+	errorMsg("")
+{
+}
+
+MySqlUtil::~MySqlUtil(void)
+{
+}
+
+
+MYSQL* MySqlUtil::Connect()
+{
+	setDefault();
+
+	MYSQL* conn;
+	conn = mysql_init(NULL);
+	unsigned int ret;
+	ret = mysql_options(conn,MYSQL_SET_CHARSET_NAME,g_DataBaseCODE);
+	if(mysql_real_connect(conn,g_DataBaseServer,g_DataBaseUserName,g_DataBasePassWord,g_DataBaseName,0,NULL,0))
+	{
+		return conn;
+	}else{
+		this->iErron = mysql_errno(conn);
+		this->errorMsg = mysql_error(conn);
+	}
+	return NULL;
+}
+
+int MySqlUtil::Insert(char* insertSql){
+	int iRes;
+	MYSQL* conn = Connect();
+	if(conn){
+		iRes = mysql_query(conn,insertSql);
+		if(iRes){
+			this->iErron = mysql_errno(conn);
+			this->errorMsg = mysql_error(conn);
+			mysql_close(conn);
+		}else{
+			mysql_close(conn);
+			return 1;
+		}
+
+	}
+	return 0;
+}
+
+int MySqlUtil::erron(){
+	return this->iErron;
+}
+
+const char* MySqlUtil::error(){
+	return this->errorMsg;
+}
+
+void MySqlUtil::setDefault(){
+	this->iErron = 0;
+	this->errorMsg = "";
+}

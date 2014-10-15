@@ -1,0 +1,14 @@
+include:
+F:\Program Files\MySQL\MySQL_Server_lib\include
+soci-3.2.2\core
+soci-3.2.2\backends\mysql
+
+lib path:
+F:\Program Files\MySQL\MySQL_Server_lib\lib\opt
+lib\Debug
+
+
+lib:
+libmysql.lib
+soci_mysql_3_2.lib
+soci_core_3_2.lib
